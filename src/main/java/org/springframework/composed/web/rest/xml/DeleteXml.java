@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.springframework.composed.web.rest;
+package org.springframework.composed.web.rest.xml;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Target(METHOD)
 @Retention(RUNTIME)
 @Documented
-public @interface DeleteJson {
+public @interface DeleteXml {
 
 	@AliasFor(annotation = RequestMapping.class, attribute = "name")
 	String name() default "";

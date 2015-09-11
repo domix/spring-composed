@@ -20,11 +20,14 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: "io.spring.dependency-management"
 apply plugin: 'com.github.ben-manes.versions'
+apply plugin: 'maven'
+// apply plugin: 'spring-boot' 
 
 jar {
     baseName = 'spring-composed'
-    version = '1.0.0-SNAPSHOT'
 }
+
+group = 'org.springframework.composed'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
